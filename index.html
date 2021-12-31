@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:image" content="thumb.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta
+      name="description"
+      content="A Dynamic calendar with Light and Dark mode feature"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Efty's Calendar</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.css" />
     <script defer src="app.js"></script>
-</head>
-<body class="light">
+  </head>
+  <body class="light">
     <div class="calendar">
-        <div class="calendar-header">
-            <span class="month-picker" id="month-picker">February</span>
-            <div class="year-picker">
-                <span class="year-change" id="prev-year">
-                    <pre><</pre>
-                </span>
-                <span id="year">2021</span>
-                <span class="year-change" id="next-year">
-                    <pre>></pre>
-                </span>
-            </div>
+      <div class="calendar-header">
+        <span class="month-picker" id="month-picker">February</span>
+        <div class="year-picker">
+          <span class="year-change" id="prev-year">
+            <pre><</pre>
+          </span>
+          <span id="year">2021</span>
+          <span class="year-change" id="next-year">
+            <pre>></pre>
+          </span>
         </div>
-        <div class="calendar-body">
-            <div class="calendar-week-day">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
-            </div>
-            <div class="calendar-days"></div>
+      </div>
+      <div class="calendar-body">
+        <div class="calendar-week-day">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
         </div>
-        <div class="calendar-footer">
-            <div class="toggle">
-                <span>Dark Mode</span>
-                <div class="dark-mode-switch">
-                    <div class="dark-mode-switch-ident"></div>
-                </div>
-            </div>
+        <div class="calendar-days"></div>
+      </div>
+      <div class="calendar-footer">
+        <div class="toggle">
+          <span>Dark Mode</span>
+          <div class="dark-mode-switch">
+            <div class="dark-mode-switch-ident"></div>
+          </div>
         </div>
-        <div class="month-list"></div>
+      </div>
+      <div class="month-list"></div>
     </div>
-
-</body>
+  </body>
 </html>
